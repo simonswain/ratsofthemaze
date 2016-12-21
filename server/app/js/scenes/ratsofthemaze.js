@@ -290,29 +290,30 @@ Scenes.ratsofthemaze.prototype.paintScore = function (leds) {
 
 Scenes.ratsofthemaze.prototype.paintTitle = function (fx, gx) {
   fx.ctx.save();
-  fx.ctx.translate(gx.w / 2 - (gx.h / this.memory.length), gx.h / this.memory.length);
+  fx.ctx.translate(gx.w - 320, gx.h - 16);
   gx.ctx.save();
-  gx.ctx.translate(gx.w / 2 - (gx.h / this.memory.length), gx.h / this.memory.length);
+  gx.ctx.translate(gx.w - 320, gx.h - 16);
+
   for (var i = 0; i < this.memory.length - 1; i++) {
     if (this.attrs.index === i) {
       fx.ctx.fillStyle = '#0f0';
       fx.ctx.font = '36px robotron';
       fx.ctx.textAlign = 'center';
-      fx.ctx.textBaseline = 'middle';
+      fx.ctx.textBaseline = 'bottom';
       fx.ctx.fillText(
         ((this.memory[i] < 16) ? '0' : '') + String.fromCharCode(this.memory[i]),
-        gx.w / 2,
-        gx.h / this.memory.length * i
+        this.memory.length * i * 1.2,
+        0
       );
 
       gx.ctx.fillStyle = '#fff';
       gx.ctx.font = '36px robotron';
       gx.ctx.textAlign = 'center';
-      gx.ctx.textBaseline = 'middle';
+      gx.ctx.textBaseline = 'bottom';
       gx.ctx.fillText(
         ((this.memory[i] < 16) ? '0' : '') + String.fromCharCode(this.memory[i]),
-        gx.w / 2,
-        gx.h / this.memory.length * i
+        this.memory.length * i * 1.2,
+        0
       );
     }
   }
