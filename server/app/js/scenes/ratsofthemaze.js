@@ -290,9 +290,9 @@ Scenes.ratsofthemaze.prototype.paintScore = function (leds) {
 
 Scenes.ratsofthemaze.prototype.paintTitle = function (fx, gx) {
   fx.ctx.save();
-  fx.ctx.translate(gx.w - 320, gx.h - 16);
+  fx.ctx.translate(gx.w - 320, gx.h - 24);
   gx.ctx.save();
-  gx.ctx.translate(gx.w - 320, gx.h - 16);
+  gx.ctx.translate(gx.w - 320, gx.h - 24);
 
   for (var i = 0; i < this.memory.length; i++) {
     if (this.attrs.index === i) {
