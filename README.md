@@ -1,6 +1,6 @@
 # Rats of the Maze
 
-<img src="http://i.imgur.com/eI0QDSM.gif">
+[ratsofthemaze.com](https://ratsofthemaze.com)
 
 The year is 2048.
 
