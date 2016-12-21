@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  background: #000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #090;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+}
+
+a {
+  color: #0f0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  height: 200px;
+  text-align: center;
+}
+
+.header h1 {
+  padding: 32px 0;
+  line-height:64px;
+  margin: 0;
+  font-size: 48px;
+  color: #0f0;
+  font-weight: normal;
+  font-family: monospace, courier;
+}
+
+.header .twitter {
+  color: #999;
+  font-family: monospace;
+  padding: 16px;
+}
+
+.releases {
+  margin: auto;
+  padding: 0 16px 16px 16px;
+  overflow: auto;
+}
+
+.release {
+  width: 320px;
+  height: 560px;
+  border-top: 1px solid rgba(255,255,255,0.25);
+  display: inline-block;
+  float: left;
+  margin: 0 16px 16px 16px;
+}
+
+.cover {
+  width: 320px;
+  height: 240px;
+  margin: auto;
+}
+
+.track {
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    margin: auto;
+    width: 320px;
+  }
+  .releases {
+    margin: auto;
+    width: 320px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .release {
+    width: 320px;
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .header {
+    margin: auto;
+    width: 740px;
+  }
+  .releases {
+    width: 740px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .header {
+    margin: auto;
+    width: 1112px;
+  }
+  .releases {
+    width: 1112px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+
+.release h1 {
+  margin: 0;
+  padding: 16px 0;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.release h3 {
+  font-weight: normal;
+}
+
+.release h1 span {
+  float: right;
+  color: #999;
+  font-size:80%;
+}

@@ -1,0 +1,37 @@
+{
+  "name": "ratsofthemaze",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://ratsofthemaze.com",
+  "author": {
+    "name": "Simon Swain",
+    "email": "simon@simonswain.com",
+    "url": "https://simonswain.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simonswain/ratsofthemaze"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "postinstall": "rsync --ignore-existing config/index.sample.js config/index.js"
+  },
+  "author": "Simon Swain <simon@simonswain.com> (http://simonswain.com)",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.2.25",
+    "handlebars": "^4.0.5",
+    "hapi": "^13.5.0",
+    "hapi-less": "^0.2.0",
+    "inert": "^4.0.1",
+    "less": "^2.5.3",
+    "lodash": "^3.10.1",
+    "uglify-js": "^2.7.0",
+    "vision": "^4.1.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0"
+  }
+}
