@@ -294,10 +294,10 @@ Scenes.ratsofthemaze.prototype.paintTitle = function (fx, gx) {
   gx.ctx.save();
   gx.ctx.translate(gx.w - 320, gx.h - 16);
 
-  for (var i = 0; i < this.memory.length - 1; i++) {
+  for (var i = 0; i < this.memory.length; i++) {
     if (this.attrs.index === i) {
       fx.ctx.fillStyle = '#0f0';
-      fx.ctx.font = '36px robotron';
+      fx.ctx.font = '24px robotron';
       fx.ctx.textAlign = 'center';
       fx.ctx.textBaseline = 'bottom';
       fx.ctx.fillText(
@@ -307,7 +307,7 @@ Scenes.ratsofthemaze.prototype.paintTitle = function (fx, gx) {
       );
 
       gx.ctx.fillStyle = '#fff';
-      gx.ctx.font = '36px robotron';
+      gx.ctx.font = '24px robotron';
       gx.ctx.textAlign = 'center';
       gx.ctx.textBaseline = 'bottom';
       gx.ctx.fillText(
