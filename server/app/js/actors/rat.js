@@ -786,8 +786,8 @@ Actors.Rat.prototype.paint = function (view) {
     // momma rat
 
     // tail
-      view.ctx.fillStyle = '#090';
-      view.ctx.strokeStyle = '#090';
+      view.ctx.fillStyle = '#ff69b4';
+      view.ctx.strokeStyle = '#ff69b4';
       view.ctx.save();
       view.ctx.translate(-1.5 * z, 0);
       view.ctx.beginPath();
@@ -800,7 +800,7 @@ Actors.Rat.prototype.paint = function (view) {
       view.ctx.restore();
 
     // body
-      view.ctx.fillStyle = '#090';
+      view.ctx.fillStyle = '#ff69b4';
       view.ctx.lineWidth = 1;
       view.ctx.beginPath();
       view.ctx.ellipse(0, 0, z * 2.4, z * 1.8, 0, 2 * Math.PI, 0);
@@ -813,7 +813,7 @@ Actors.Rat.prototype.paint = function (view) {
       view.ctx.rotate(q2 * 0.3);
 
     // whiskers
-      view.ctx.strokeStyle = '#090';
+      view.ctx.strokeStyle = '#ff69b4';
       view.ctx.lineWidth = 0.5;
 
       view.ctx.beginPath();
@@ -837,14 +837,14 @@ Actors.Rat.prototype.paint = function (view) {
       view.ctx.stroke();
 
     // skull
-      view.ctx.fillStyle = '#090';
+      view.ctx.fillStyle = '#ff69b4';
       view.ctx.beginPath();
       view.ctx.ellipse(0, 0, z * 1.2, z * 0.7, 0, 2 * Math.PI, 0);
       view.ctx.closePath();
       view.ctx.fill();
 
     // eyes
-      view.ctx.fillStyle = '#f00';
+      view.ctx.fillStyle = '#fff';
     // blink
       if (Math.random() < 0.1) {
         view.ctx.fillStyle = '#000';
