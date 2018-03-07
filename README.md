@@ -34,8 +34,9 @@ Very little information or emulation of the original game can be found, and only
 
 Rats of the Maze has been presented as a conference talk at Web Directions Code in Australia, and JSConf.asia in Singapore. Each talk follows a different tangent in describing the simulation and back-story.
 
+* [JSConf.nz 2016, Wellington, New Zealand](https://www.youtube.com/watch?v=0bvNxRIQn_4&list=PLyQxsMpCC-uKSLgur-Yocgu2wgzGpKxlo)
 * [JSConf.asia 2016, Singapore](https://www.youtube.com/watch?v=-IvDnvtJ93s&t=491s&index=1&list=PLyQxsMpCC-uKSLgur-Yocgu2wgzGpKxlo)
-* [Web Directions Code, Melbourne, 2016](https://www.youtube.com/watch?v=44Gsb4AqUh0&t=13s&index=5&list=PLyQxsMpCC-uKSLgur-Yocgu2wgzGpKxlo)
+* [Web Directions Code 2016, Melbourne, Australia](https://www.youtube.com/watch?v=44Gsb4AqUh0&t=13s&index=5&list=PLyQxsMpCC-uKSLgur-Yocgu2wgzGpKxlo)
 
 
 Other talks cover implementation and different applications of the [coldwar.io](coldwar.io) simulation engine Rats of the Maze uses.
